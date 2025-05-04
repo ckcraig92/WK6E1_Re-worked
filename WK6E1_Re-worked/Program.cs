@@ -16,7 +16,7 @@ namespace WK6E1_Re_worked
         class Vehicle
 
         {
-            //variables
+            //variables 
             public string Make { get; set; }
             public string Model { get; set; }
             public int Year { get; set; }
@@ -37,7 +37,7 @@ namespace WK6E1_Re_worked
         //child class
         class Car : Vehicle
         {
-            public int NumberOfDoors { get; set; }
+            public int NumberOfDoors { get; set; } //car specfic 
             public override void DisplayInfo() //override to display attributes
             {
                 base.DisplayInfo(); //call to display
@@ -47,7 +47,7 @@ namespace WK6E1_Re_worked
         //child class
         class Motorcycle : Vehicle
         {
-            public bool HasSideCar { get; set; }
+            public bool HasSideCar { get; set; } //motorcycle specific
             public override void DisplayInfo() //override to display attributes
             {
                 base.DisplayInfo(); //call base to display
